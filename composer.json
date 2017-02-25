@@ -5,7 +5,8 @@
     "symfony/config": "^3.2",
     "symfony/yaml": "^3.2",
     "czproject/git-php": "^3.8",
-    "slim/twig-view": "^2.2"
+    "slim/twig-view": "^2.2",
+	"phpunit/phpunit": "*"
   },
   "autoload": {
     "psr-4": {
