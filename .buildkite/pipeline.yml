@@ -1,6 +1,6 @@
 steps:
   - name: ":Checks: stage"
-    command: script/deploy.sh
+    command: script/checks.sh
   - wait
   - name: ":deploy: stage"
     command: script/on_success.sh
