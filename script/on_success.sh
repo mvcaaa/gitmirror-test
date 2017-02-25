@@ -7,4 +7,4 @@ echo $BUILDKITE_BUILD_CHECKOUT_PATH
 # current branch name
 echo $BUILDKITE_BRANCH
 
-buildkite-agent meta-data get "git_cache_dir"
+echo $BUILDKITE_AGENT_META_DATA
