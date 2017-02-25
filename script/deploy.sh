@@ -1,3 +1,3 @@
 # Test bash script for deployment
 
-echo "Hello develop script"
+echo "Hello from develop branch"
