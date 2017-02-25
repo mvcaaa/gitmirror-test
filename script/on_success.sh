@@ -9,4 +9,4 @@ echo $BUILDKITE_BRANCH
 
 echo $BUILDKITE_AGENT_NAME 
 
-curl "https://api.buildkite.com/v2/organizations/equals-self-equals/agent/$BUILDKITE_AGENT_NAME?access_token=e993fe6a2b043933b4e6cd4a18e47382cead1689"
+curl "https://api.buildkite.com/v2/organizations/equals-self-equals/agents?name=$BUILDKITE_AGENT_NAME&access_token=e993fe6a2b043933b4e6cd4a18e47382cead1689"
