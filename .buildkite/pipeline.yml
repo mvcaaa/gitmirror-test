@@ -2,7 +2,7 @@ steps:
   - name: ":Checks: stage"
     command: script/checks.sh
   - wait
-  - name: ":deploy: stage"
+  - name: ":Deploy: stage"
     command: script/on_success.sh
 	
 
