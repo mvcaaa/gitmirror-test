@@ -16,7 +16,7 @@ GIT_CLONE_DIR="$BUILDKITE_AGENT_META_DATA_GIT_CACHE_DIR/$BUILDKITE_BRANCH"
 
 if [ -d "$GIT_CLONE_DIR" ]; then rm -Rf $GIT_CLONE_DIR; mkdir $GIT_CLONE_DIR; fi
 
-rsync -av --exclude='.git' $BUILDKITE_BUILD_CHECKOUT_PATH/ $GIT_CLONE_DIR
+rsync -av --exclude='.git' --exclude='.buildkite' $BUILDKITE_BUILD_CHECKOUT_PATH/ $GIT_CLONE_DIR
 
 if [ -f "$BUILDKITE_AGENT_META_DATA_GIT_CACHE_DIR/tested-branches" ]; then
 	echo "$BUILDKITE_BRANCH" | sort -o $BUILDKITE_AGENT_META_DATA_GIT_CACHE_DIR/tested-branches - $BUILDKITE_AGENT_META_DATA_GIT_CACHE_DIR/tested-branches
