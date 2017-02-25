@@ -10,4 +10,3 @@ fi
 
 composer install 
 vendor/bin/phpunit --bootstrap src/Email.php tests/EmailTest
-
