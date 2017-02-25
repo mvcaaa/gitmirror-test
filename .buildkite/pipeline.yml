@@ -1,8 +1,8 @@
 steps: 
   - 
-    command: script/checks.sh
+    command: .buildkite/checks.sh
     label: "Check stage"
   - wait
   - 
-    command: script/on_success.sh
+    command: .buildkite/on_success.sh
     label: "Deploy stage"
