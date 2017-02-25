@@ -3,9 +3,9 @@
 echo "Hello from $BUILDKITE_BRANCH branch"
 
 if [ -f "$BUILDKITE_AGENT_META_DATA_GIT_CACHE_DIR/tested-branches" ]; then 
-	sed -i.bak '/$BUILDKITE_BRANCH/d' "$BUILDKITE_AGENT_META_DATA_GIT_CACHE_DIR/tested-branches"
+	sed -i.bak '/$BUILDKITE_BRANCH/d' $BUILDKITE_AGENT_META_DATA_GIT_CACHE_DIR/tested-branches
 else
-	touch "$BUILDKITE_AGENT_META_DATA_GIT_CACHE_DIR/tested-branches"
+	touch $BUILDKITE_AGENT_META_DATA_GIT_CACHE_DIR/tested-branches
 fi
 
 composer install 
