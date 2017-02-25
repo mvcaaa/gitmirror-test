@@ -12,7 +12,7 @@ final class Email
 		$this->email = $email;
 	}
 
-	public static function fromString(string $email): self
+	public static function fromString(string $email)
 	{
 		return new self($email);
 	}
@@ -22,7 +22,7 @@ final class Email
 		return $this->email;
 	}
 
-	private function ensureIsValidEmail(string $email): void
+	private function ensureIsValidEmail(string $email)
 	{
 		if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 			throw new InvalidArgumentException(
