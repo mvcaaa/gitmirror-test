@@ -1,8 +1,10 @@
 steps:
-  - name: ":Checks: stage"
-    command: script/checks.sh
-  - wait
-  - name: ":Deploy: stage"
-    command: script/on_success.sh
+	- label: ":Checks: stage"
+	command: script/checks.sh
+	
+	- wait
+
+	- label: ":Deploy: stage"
+	command: script/on_success.sh
 	
 
