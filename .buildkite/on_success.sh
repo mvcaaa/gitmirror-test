@@ -5,12 +5,12 @@
 echo "Hello from on success script"
 
 #current folder
-echo $BUILDKITE_BUILD_CHECKOUT_PATH
+echo "Source folder:$BUILDKITE_BUILD_CHECKOUT_PATH"
 # current branch name
-echo $BUILDKITE_BRANCH
+echo "Current branch to deploy:$BUILDKITE_BRANCH"
 
 # Agent meta
-echo $BUILDKITE_AGENT_META_DATA_GIT_CACHE_DIR
+echo "Dest folder on agent:$BUILDKITE_AGENT_META_DATA_GIT_CACHE_DIR"
 
 GIT_CLONE_DIR="$BUILDKITE_AGENT_META_DATA_GIT_CACHE_DIR/$BUILDKITE_BRANCH"
 
